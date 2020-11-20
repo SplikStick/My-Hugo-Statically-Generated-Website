@@ -1,0 +1,712 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="generator" content="Hugo 0.68.3" />
+
+    <meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+<script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=GTM-000000' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-000000');
+</script>
+
+
+<title></title>
+<style>
+     
+    .rad-fade-in {
+        will-change: opacity, transform;
+        animation-name: rad-fade-in-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-fallback {
+        0% {
+            opacity: 0;
+        }
+
+        75% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .fonts-loaded .rad-fade-in.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+    }
+
+    .fonts-loaded .rad-fade-in.rad-animate {
+        animation-name: rad-fade-in;
+        animation-duration: 1.1s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+     
+    .rad-fade-in-long {
+        will-change: opacity, transform;
+        animation-name: rad-fade-in-long-fallback;
+        animation-duration: 8s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-long-fallback {
+        0% {
+            opacity: 0;
+        }
+
+        75% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .fonts-loaded .rad-fade-in-long.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+    }
+
+    .fonts-loaded .rad-fade-in-long.rad-animate {
+        animation-name: rad-fade-in-long;
+        animation-duration: 2s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-long {
+        0% {
+            opacity: 0;
+        }
+
+        20% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+     
+    .rad-fade-down {
+        will-change: opacity, transform;
+        animation-name: rad-fade-down-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+        transform: translateY(-30px);
+    }
+
+    @keyframes rad-fade-down-fallback {
+        0% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        75% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .fonts-loaded .rad-fade-down.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    .fonts-loaded .rad-fade-down.rad-animate {
+        animation-name: rad-fade-down;
+        animation-duration: 1.1s;
+    }
+
+    @keyframes rad-fade-down {
+        0% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+     
+    .rad-scale-down {
+        will-change: opacity, transform;
+        animation-name: rad-scale-down-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+        transform-origin: 50% 0;
+    }
+
+    @keyframes rad-scale-down-fallback {
+        0% {
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        75% {
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scaleY(1);
+        }
+    }
+
+    .fonts-loaded .rad-scale-down.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+        transform: scaleY(0.95);
+    }
+
+    .fonts-loaded .rad-scale-down.rad-animate {
+        animation-name: rad-scale-down;
+        animation-duration: 1.1s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-scale-down {
+        0% {
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scaleY(1);
+        }
+    }
+</style>
+
+
+<link rel="stylesheet" href="https://matthewgoul.art/css/main.css"/>
+
+<link rel="stylesheet" href="https://matthewgoul.art/css/rad-icons.css"/>
+
+<link rel="stylesheet" href="https://matthewgoul.art/css/custom.css"/>
+
+
+    
+
+
+</head>
+
+<body>
+
+	<header class="header fixed-top rad-animation-group" id="header">
+  <div class="container rad-fade-in">
+    <nav class="navbar navbar-expand-lg navbar-light p-0">
+      <a class="navbar-brand" href="https://matthewgoul.art/">
+        <span>Matthew</span>
+        <span>Goulart</span>
+        
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent, #header"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-lg-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://matthewgoul.art/">HOME</a>
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#about"
+              >ABOUT</a
+            >
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#portfolio"
+              >PROJECTS</a
+            >
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#contact"
+              >CONTACT</a
+            >
+          </li>
+          
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+	
+	
+<section class="rad-showcase rad-showcase--index rad-animation-group rad-fade-down">
+  <div class="rad-showcase__bg">
+    <img
+      class="lozad img-responsive"
+      src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+      data-src="https://matthewgoul.art/img/showcase/showcase.png"
+      data-srcset="https://matthewgoul.art/img/showcase/showcase.png 1x, https://matthewgoul.art/img/showcase/showcase@2x.png 2x"
+      alt="Showcase keyboard and mouse image"
+    />
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-8 col-lg-7 col-xl-6">
+        <h1 class="display-1">
+          Heya, I’m Matthew!
+          <br />
+          <span
+            >Software Developer</span
+          >
+        </h1>
+        <p class="lead">
+          I am a recent Computer Scienece graduate from University of Toronto. Currently on the job hunt and ready to help develop! Whether Back-end, Front-end, or Full-Stack; I am eager to dip my toes in software development's many facets.
+        </p>
+        <a
+          href="https://matthewgoul.art/"
+          class="btn btn-primary"
+        >
+          <i class="icon-profile-fill"></i>
+          Download My Resume
+        </a>
+      </div>
+    </div>
+    <div class="row platform-links">
+      <div class="col-12">
+        
+        <a href="https://www.linkedin.com/in/matthew-goulart/" target="_blank"
+          ><i class="icon-linkedin-line"></i
+        ></a>
+        
+        <a href="https://github.com/SplikStick" target="_blank"
+          ><i class="icon-github-line"></i
+        ></a>
+        
+        <a href="https://twitter.com/matay1997" target="_blank"
+          ><i class="icon-twitter-line"></i
+        ></a>
+        
+        <a href="https://www.instagram.com/matay1997/" target="_blank"
+          ><i class="icon-instagram-line"></i
+        ></a>
+        
+        <a href="https://www.facebook.com/matthew.goulart.77" target="_blank"
+          ><i class="icon-facebook-line"></i
+        ></a>
+        
+      </div>
+    </div>
+  </div>
+  <div class="rad-showcase__bg rad-showcase__bg--mobile">
+    <img
+      class="lozad img-responsive"
+      src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+      data-src="https://matthewgoul.art/img/showcase/showcase-mobile.jpg"
+      alt="Showcase keyboard and mouse image"
+    />
+  </div>
+</section>
+
+
+	
+	
+<section class="section rad-animation-group pb-0" id="about">
+  <div class="container rad-fade-down">
+    <div class="row d-flex flex-column-reverse flex-md-row">
+      <div class="about__profile-picture col-12 col-md-6">
+        <img
+          class="lozad img-responsive image-left-overflow"
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="https://matthewgoul.art/images/profile_pic2.jpg"
+          data-srcset="https://matthewgoul.art/images/profile_pic2.jpg 1x, https://matthewgoul.art/img/who-am-i/user-picture@2x.png 2x"
+          alt="Profile Picture"
+        />
+      </div>
+      <div class="col-12 col-md-6 my-auto my-auto">
+        <h2>Who am I?</h2>
+        <p class="lead">
+          <p class="lead"> There was a time in my life where I thought I didnt have any hobbies; now I got too many! I am hobby Video Editor & Director, Marching Band Musician, 3D Modeller, D&D Dungeon Master, and Video Gamer. I am by no means masterful at any of these but my creativity is not limited to my mastery, it is limited to how much fun I am having! </p>
+        </p>
+        <a
+          href="https://www.linkedin.com/in/matthew-goulart/"
+          target="_blank"
+          class="btn btn-primary"
+        >
+          <i class="icon-smile-fill"></i>
+          About Me
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+	
+	
+<section class="section section--border-bottom rad-animation-group">
+    <div class="container">
+        <div class="row rad-fade-down">
+            <div class="col-12">
+                <h2>Education</h2>
+                <div class="row pt-2 pt-md-4">
+                    
+                    <div class="col-12 col-sm-6 mb-4 mb-sm-0">
+                        <div class="education">
+                            <div class="education__date">2015-2020</div>
+                            <div class="education__title">University of Toronto</div>
+                            <div class="education__degree">
+                                Honours Bachelor of Science (BS), Computer Science Specialist
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+	
+	
+
+	
+	
+<section id="portfolio" class="section section--border-bottom">
+  <div class="container">
+    <h2 class=" rad-animation-group rad-fade-down">
+      Projects
+    </h2>
+    <div class="row row--padded rad-animation-group rad-fade-down">
+      <div class="col-12">
+        <div class="clients">
+          
+        </div>
+      </div>
+    </div>
+    
+    <div
+      class="row row--padded rad-animation-group rad-fade-down flex-column-reverse flex-md-row"
+    >
+      
+      <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+        <h3>Secure Lock Signal (SLS) - Capstone Project</h3>
+        <p class="lead">
+          A secure remote desktop locking application designed for mobile devices using the Internet and optional Bluetooth proximity. I led a team of 6 (including myself), split into 3 teams: Mobile Team, Desktop Team, and Server Team. I worked server-side, creating and maintaining the database and API. All the details are listed within the report.
+        </p>
+        <div>
+          <a href="https://docs.google.com/document/d/1tsPqFvmWUAYum-lBG_5fxcrPvd0gubjM08qx4VgXuec/edit?usp=sharing" class="btn btn-primary"
+            >SLS Report<i class="icon-arrow-right"></i
+          ></a>
+          
+            <a href="https://docs.google.com/document/d/1CWb0LclcLePAipzKqCSZVv9e7Dp3Zi08xRigWwMMD4o/edit?usp=sharing" class="btn btn-primary"
+              >Overview<i class="icon-arrow-right"></i
+            ></a>
+          
+        </div>
+      </div>
+      <div class="col-12 col-md-7 pl-md-0 text-right">
+        <img
+          class='lozad img-responsive img-clip-left-backward'
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="https://matthewgoul.art/images/Presentation%20Tri-Monitor-Fold%202%20Edit.png"
+          data-srcset="https://matthewgoul.art/images/Presentation%20Tri-Monitor-Fold%202%20Edit.png 1x, https://matthewgoul.art/img/works/radity-finance@2x.jpg 2x"
+          alt="Secure Lock Signal (SLS) - Capstone Project"
+        />
+      </div>
+      
+    </div>
+    
+    <div
+      class="row row--padded rad-animation-group rad-fade-down "
+    >
+      
+      <div class="col-12 col-md-7 pl-md-0 text-right">
+        <img
+          class='lozad img-responsive img-clip-right-backward'
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="https://matthewgoul.art/images/public_journals.PNG"
+          data-srcset="https://matthewgoul.art/images/public_journals.PNG 1x, https://matthewgoul.art/img/works/swissfintech@2x.jpg 2x"
+          alt="Public Journals"
+        />
+      </div>
+      <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+        <h3>Public Journals</h3>
+        <p class="lead">
+          A Crowd-Sourced Peer Evaluation Website for Educational Papers.
+        </p>
+        <div>
+          <a href="https://matthewgoul.art/" class="btn btn-primary"
+            >Case Study<i class="icon-arrow-right"></i
+          ></a>
+          
+        </div>
+      </div>
+      
+    </div>
+    
+    <div
+      class="row row--padded rad-animation-group rad-fade-down flex-column-reverse flex-md-row"
+    >
+      
+      <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+        <h3>Angular Playground</h3>
+        <p class="lead">
+          My website that I use to tinker around with different facets of Angular and Typescript. Houses different little apps currently in use by my friends such as the &#39;One Piece Counter&#39;, which keeps track of all our completed episodes of the anime &#39;One Piece&#39;.
+        </p>
+        <div>
+          <a href="https://www.matthewgoul.art/projects/Angular-Playground" class="btn btn-primary"
+            >Website<i class="icon-arrow-right"></i
+          ></a>
+          
+        </div>
+      </div>
+      <div class="col-12 col-md-7 pl-md-0 text-right">
+        <img
+          class='lozad img-responsive img-clip-left-forward'
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="https://matthewgoul.art/images/OnePieceCounter.PNG"
+          data-srcset="https://matthewgoul.art/images/OnePieceCounter.PNG 1x, https://matthewgoul.art/img/works/swissfintech@2x.jpg 2x"
+          alt="Angular Playground"
+        />
+      </div>
+      
+    </div>
+    
+    <div
+      class="row row--padded rad-animation-group rad-fade-down "
+    >
+      
+      <div class="col-12 col-md-7 pl-md-0 text-right">
+        <img
+          class='lozad img-responsive img-clip-right-forward'
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="https://matthewgoul.art/images/MyOldWebsite.png"
+          data-srcset="https://matthewgoul.art/images/MyOldWebsite.png 1x, https://matthewgoul.art/img/works/swissfintech@2x.jpg 2x"
+          alt="My Old Website"
+        />
+      </div>
+      <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+        <h3>My Old Website</h3>
+        <p class="lead">
+          A pure HTML, Javascript, and CSS website hosted on github pages. No longer in use but I keep it here for the memories.
+        </p>
+        <div>
+          <a href="https://splikstick.github.io/" class="btn btn-primary"
+            >Website<i class="icon-arrow-right"></i
+          ></a>
+          
+            <a href="https://github.com/SplikStick/SplikStick.github.io" class="btn btn-primary"
+              >Github<i class="icon-arrow-right"></i
+            ></a>
+          
+        </div>
+      </div>
+      
+    </div>
+    
+  </div>
+</section>
+
+
+	
+	
+
+	
+	
+<section id="contact" class="section section--contact pt-0">
+    <div class="container">
+        <div class="contact">
+            <h2>Contact Me</h2>
+            <div class="row pt-2">
+                <div class="col-12 col-lg-7">
+                    <form action="#" method="POST">
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <input type="text" name="" id="full_name"
+                                       placeholder="Full Name"/>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="text" name="" id="email"
+                                       placeholder="Email Address"/>
+                            </div>
+                        </div>
+                        <div class="row pt-4">
+                            <div class="col-12">
+                                <textarea name="" id="message"
+                                          cols="30" rows="3" placeholder="Type Your Message Here"></textarea>
+                            </div>
+                        </div>
+                        <div class="row pt-4">
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="icon-mail-fill"></i>
+                                    Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 col-lg-5 contact__info">
+                    <h4>Phone Number</h4>
+                    <span>905 580 0869</span>
+                    <h4>Email</h4>
+                    <span><a href="mailto:m.goulart@mail.utoronto.ca">m.goulart@mail.utoronto.ca</a></span>
+                    <h4>Home Address</h4>
+                    <span>93 Orsett St.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+	
+	
+
+	
+
+	<footer class="footer">
+  <div class="container">
+    <div class="footer__left">
+      <div class="footer__copy">
+        
+      </div>
+    </div>
+    <div class="footer__links">
+      <ul class="navbar-nav ">
+        <li class="nav-item">
+          <a class="nav-link" href="/">HOME</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="https://matthewgoul.art/">ABOUT</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="https://matthewgoul.art/">PROJECTS</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="https://matthewgoul.art/">CONTACT</a>
+        </li>
+        
+      </ul>
+    </div>
+    <div class="footer__right">
+      <a href="https://radity.com/"
+        ><img
+          src="https://matthewgoul.art/"
+          srcset="https://matthewgoul.art/ 1x, https://matthewgoul.art/ 2x"
+          alt=""
+      /></a>
+    </div>
+  </div>
+</footer>
+
+    <script src='https://matthewgoul.art/js/rad-animations.js'></script>
+<script src='https://matthewgoul.art/js/library/lozad.min.js'></script>
+<script>
+  window.addEventListener("load", function() {
+    var observer = window.lozad(".lozad", {
+      rootMargin: window.innerHeight / 2 + "px 0px",
+      threshold: 0.01
+    }); 
+    observer.observe();
+  });
+</script>
+<script src='https://matthewgoul.art/js/library/jquery-3.3.1.slim.min.js'></script>
+<script src='https://matthewgoul.art/js/library/bootstrap.min.js'></script>
+<script src='https://matthewgoul.art/js/sticky-header.js'></script>
+<script src='https://matthewgoul.art/js/library/smooth-scroll.polyfills.min.js'></script>
+<script src='https://matthewgoul.art/js/library/fontfaceobserver.js'></script>
+<script>
+  (function(w) {
+    
+    if (w.document.documentElement.className.indexOf("fonts-loaded") > -1) {
+      return;
+    }
+    var fontA = new w.FontFaceObserver("Inter", {
+      weight: 300
+    });
+    var fontB = new w.FontFaceObserver("Inter", {
+      weight: 400
+    });
+    var fontC = new w.FontFaceObserver("Inter", {
+      weight: 500
+    });
+    var fontD = new w.FontFaceObserver("Inter", {
+      weight: 600
+    });
+    var fontE = new w.FontFaceObserver("Inter", {
+      weight: 700
+    });
+    var fontF = new w.FontFaceObserver("Inter", {
+      weight: 900
+    });
+    w.Promise.all([fontA.load(), fontC.load(), fontF.load()]).then(function() {
+      w.document.documentElement.className += " fonts-loaded";
+    });
+  })(this);
+</script>
+<script>
+  const scroll = new SmoothScroll('a[href*="#"]');
+    $('a.nav-link').on('click', () => {
+      const navbar = $('.navbar-collapse');
+      if (navbar && navbar.hasClass('show')) {
+        $('.navbar-toggler').click();
+      }
+    })
+</script>
+
+</body>
+
+</html>
